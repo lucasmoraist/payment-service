@@ -1,1 +1,9 @@
-spring.application.name=payment-service
+spring:
+  application:
+    name: payment-service
+
+secrets:
+  client:
+    mercado-pago:
+      access-token: ${MERCADO_PAGO_ACCESS_TOKEN}
+      webhook: ${MERCADO_PAGO_WEBHOOK}
